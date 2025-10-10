@@ -1,5 +1,5 @@
 ---
-title: iOS Version
+title: Creating Backups
 description: This is a page in my Starlight-powered site
 ---
 
@@ -9,11 +9,19 @@ import { Aside } from '@astrojs/starlight/components';
 
 ---
 
-The native iOS version is the ideal choice for iOS users, however it requires sideloading the app onto your device. Note that this *does not* require jailbreaking.
+In the Options menu within Lilith's Guidance, you will see 2 buttons in the top-right corner of the screen: "Import Backup" and "Create Backup."
+<br />
+### Create Backup:
+***
+"Create Backup" will create a ZIP file containing the entirety of your save files. This is useful to safeguard your save data by uploading the ZIP to an external storage device or cloud storage.
+<br />
+### Import Backup:
+***
+"Import Backup" will ask you to select a ZIP folder containing your backed-up files.
 
-There are several free tools that accomplish this:
-* ### [Sideloadly](https://sideloadly.io/ "Sideloadly")
-
-* ### [AltStore](https://altstore.io/ "AltStore")
-
-* ### [SideStore](https://sidestore.io/ "SideStore")
+<Badge text="Warning" variant="danger" /> Importing a backup will erase ALL of your current save data, if any, leaving only the files that were within your backed-up ZIP file.
+<br />
+### Moving Between Devices:
+***
+Another use for this feature is if you were to move to another device.
+For example, say you want to move your save data from your Android to your PC. Simply create a backup from within your Android app, and import the created backup into your PC version of Lilith's Guidance.
