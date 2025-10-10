@@ -7,21 +7,40 @@ import pagePlugin from "@pelagornis/page";
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: "Lilith's Guidance",
+			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'App Versions',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-						{ label: 'html5 Guide', slug: 'guides/html5' },
+						{ label: 'HTML5 Version', slug: 'versions/html5' },
+						{ label: 'iOS Version', slug: 'versions/ios' },
+						{ label: 'Updating', slug: 'versions/updating' },
+						{ label: 'Creating Backups', slug: 'versions/backups' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Ritual Designer',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Getting Started', slug: 'ritual-designer/start' },
+						{ label: 'BBCode', slug: 'ritual-designer/bbcode' },
+						{ label: 'Importing', slug: 'ritual-designer/importing' },
+						{ label: 'Exporting', slug: 'ritual-designer/exporting' },
+					],
 				},
+				{
+					label: 'Other Tutorials',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Schedule', slug: 'other/schedule' },
+					],
+				},
+				// {
+				// 	label: 'Reference',
+				// 	autogenerate: { directory: 'reference' },
+				// },
 			],
 			plugins: [pagePlugin()],
 		}),
