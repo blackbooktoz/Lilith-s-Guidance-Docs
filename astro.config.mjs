@@ -24,6 +24,7 @@ export default defineConfig({
 					label: 'Ritual Designer',
 					items: [
 						// Each item here is one entry in the navigation menu.
+						{ label: 'Unlocking', slug: 'ritual-designer/unlocking' },
 						{ label: 'Getting Started', slug: 'ritual-designer/start' },
 						{ label: 'BBCode', slug: 'ritual-designer/bbcode' },
 						{ label: 'Importing', slug: 'ritual-designer/importing' },
