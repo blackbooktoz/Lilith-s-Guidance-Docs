@@ -1,5 +1,5 @@
 ---
-title: iOS Version
+title: BBCode
 description: This is a page in my Starlight-powered site
 ---
 
@@ -9,11 +9,20 @@ import { Aside } from '@astrojs/starlight/components';
 
 ---
 
-The native iOS version is the ideal choice for iOS users, however it requires sideloading the app onto your device. Note that this *does not* require jailbreaking.
+When a textbox is selected within the Ritual Designer, you will notice a mini BBCode menu is displayed.
 
-There are several free tools that accomplish this:
-* ### [Sideloadly](https://sideloadly.io/ "Sideloadly")
+Textboxes with multiple lines will have a "Preview" button which will deselect the textbox when pressed,
+allowing BBCode to be displayed. For single-line textboxes, you can simply press the enter key on your keyboard.
 
-* ### [AltStore](https://altstore.io/ "AltStore")
+The following BBCode explanations reference the [official Godot documentation](https://docs.godotengine.org/en/stable/tutorials/ui/bbcode_in_richtextlabel.html#reference "official Godot documentation").  
+For a detailed view of the full BBCode capabilities of Lilith's Guidance, please read the linked page.
+<br />
+### Color Codes
+***
+![color constants](/color_constants.png "color constants")
 
-* ### [SideStore](https://sidestore.io/ "SideStore")
+When using color tags, such as [color=red]text[/color] , the specified color must be one of these named colors or a
+hexidecimal code, such as [color=#ff00ff]text[/color] .
+
+The color picker (indicated by a dropper icon in the mini BBCode menu) will let you choose a color from a color wheel
+and will input its hexidecimal code for you.
