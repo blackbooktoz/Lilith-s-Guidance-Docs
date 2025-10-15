@@ -1,0 +1,48 @@
+---
+title: Media
+description: This is a page in my Starlight-powered site
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+
+---
+
+### Image & Audio
+***
+Accepted image formats: .png, .jpg, .jpeg, .webp
+
+Accepted audio formats: .mp3, .wav, .ogg
+<br />
+### Video
+At this time, the only accepted video format is .ogv
+
+As this is not a common file type, you may need to convert your video to it.
+There are online tools that may let you do this for free, with restrictions like file size limits, etc.
+
+However, an option that is completely free and gives full control over the process is [FFmpeg](https://www.ffmpeg.org/ "FFmpeg").
+
+#### FFmpeg
+After installing FFmpeg, you can run commands like these via your command line:
+
+```bash
+ffmpeg -i input_video.mp4 -c:v libtheora -q:v 7 -c:a libvorbis -q:a 5 output.ogv
+```
+
+"input_video.mp4" would be changed to the name of your video. 
+
+"output.ogv" would be the name of the converted video file.
+
+"-q:v 7" sets the video quality of the converted video on a scale from 0 to 10.
+
+"-q:a 5" sets the audio quality of the converted video on a scale from 0 to 10.
+
+Additional settings that may be helpful are frame rate and video dimensions. An example with these settings added:
+```bash
+ffmpeg -i input_video.mp4 -c:v libtheora -q:v 7 -c:a libvorbis -q:a 5 -r 30 -vf "scale=1024:576" output.ogv
+```
+
+"-r 30" sets the frame rate.
+
+"-vf" sets the video dimensions, as shown.

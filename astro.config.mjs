@@ -27,6 +27,7 @@ export default defineConfig({
 						{ label: 'Unlocking', slug: 'ritual-designer/unlocking' },
 						{ label: 'Getting Started', slug: 'ritual-designer/start' },
 						{ label: 'BBCode', slug: 'ritual-designer/bbcode' },
+						{ label: 'Media', slug: 'ritual-designer/media' },
 					],
 				},
 				{
