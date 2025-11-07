@@ -11,7 +11,7 @@ export default defineConfig({
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'App Versions',
+					label: 'App Setup',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'HTML5 Version', slug: 'versions/html5' },
@@ -30,13 +30,14 @@ export default defineConfig({
 						{ label: 'Media', slug: 'ritual-designer/media' },
 					],
 				},
-				{
-					label: 'Other Tutorials',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Schedule', slug: 'other/schedule' },
-					],
-				},
+				// {
+				// 	label: 'Other Tutorials',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Schedule', slug: 'other/schedule' },
+				// 	],
+				// },
+
 				// {
 				// 	label: 'Reference',
 				// 	autogenerate: { directory: 'reference' },

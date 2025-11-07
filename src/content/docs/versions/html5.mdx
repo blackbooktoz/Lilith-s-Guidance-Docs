@@ -13,16 +13,16 @@ import { Aside } from '@astrojs/starlight/components';
 <br />
 The HTML5 version runs in the browser and thus requires no download. It also automatically updates to the newest version of Lilith's Guidance.
 
-Since it is a Web App, it can be saved to your device's home screen and will then function similar to a normal app. This lets iOS users have an app-like experience, however:
+Since it is a Web App, it can be saved to your device's home screen and will then function similar to a normal app. This can be particularly enticing for iOS users for its simplicity, however:
 <LinkCard title="For iOS users, sideloading the native iOS version will make for the best experience." href="/versions/ios" />
 <br />
-### Best Practices to Keep Data from Being Deleted:
+### Best Practices to Keep Save Data from Being Deleted:
 ***
 - You must allow cookies.
 
 - Do not clear your browser cache, as this will delete the app's save data.
 
-- To be safe, you can periodically use the "Create Backup" feature within the options menu of Lilith's Guidance. This will export a ZIP file containing all of the app's save data.
+- To be safe, you can periodically use the "Create Backup" feature within the options menu of Lilith's Guidance. This will export a ZIP file containing all of the app's save data. [Learn more here...](/versions/backups)
 
 - Bookmarking the HTML5 version's web page increases the chance of persistence being enabled on chromium-based browsers. This greatly reduces the chance of save data being deleted by the browser. Chromium-based browsers include Google Chrome, Microsoft Edge, Opera, Brave, and Vivaldi.
 
@@ -30,7 +30,7 @@ Since it is a Web App, it can be saved to your device's home screen and will the
 
 <Badge text="Warning" variant="danger" /> On the HTML5 version, video playback will perform poorly due to missing architecture-specific assembly optimizations.
 <br />
-#### The following are device-specific limitations to be aware of:
+#### The following are additional device-specific limitations to be aware of:
 <br />
 ### For Safari Users:
 ***
@@ -40,4 +40,4 @@ Since it is a Web App, it can be saved to your device's home screen and will the
 ***
 - Until Godot adds SAF support for Android, exporting on the HTML5 version will create an empty ZIP file along with the actual ZIP containing your files. The latter file will have a (1) in the name.
 
-- On Android, the web virtual keyboard doesn't show up. It is recommended to use the downloadable version instead, or connect a keyboard to your device.
+- On Android, the web virtual keyboard doesn't show up. It is recommended to use the downloadable version instead, or to connect an external keyboard to your device.
