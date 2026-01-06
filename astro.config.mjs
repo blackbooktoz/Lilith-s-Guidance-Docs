@@ -17,7 +17,6 @@ export default defineConfig({
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'HTML5 Version', slug: 'versions/html5' },
-						// { label: 'iOS Version', slug: 'versions/ios' },
 						{ label: 'Updating', slug: 'versions/updating' },
 						{ label: 'Creating Backups', slug: 'versions/backups' },
 					],
