@@ -6,10 +6,10 @@ import pagePlugin from "@pelagornis/page";
 // https://astro.build/config
 export default defineConfig({
 	site: "https://blackbooktoz.github.io",
-	base: "/Lilith-s-Guidance-Docs/",
+	base: "/Hera-s-Guidance-Docs/",
 	integrations: [
 		starlight({
-			title: "Lilith's Guidance",
+			title: "Hera's Guidance",
 			// social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
